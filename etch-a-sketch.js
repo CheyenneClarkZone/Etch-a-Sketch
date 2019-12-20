@@ -8,6 +8,8 @@ ctx.linejoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 10;
 
+ctx.beginPath(); //start the drawing
+
 // write a draw function
 
 // write a handler for the keys
