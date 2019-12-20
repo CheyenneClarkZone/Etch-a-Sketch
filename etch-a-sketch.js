@@ -1,0 +1,1 @@
+// Select the elements on the page - canvas
