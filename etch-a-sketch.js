@@ -9,7 +9,7 @@ ctx.lineCap = 'round';
 ctx.lineWidth = 10;
 
 ctx.beginPath(); //start the drawing
-
+ctx.moveTo(200, 200);
 // write a draw function
 
 // write a handler for the keys
