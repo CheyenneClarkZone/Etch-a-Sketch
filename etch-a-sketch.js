@@ -10,6 +10,8 @@ ctx.lineWidth = 10;
 
 ctx.beginPath(); //start the drawing
 ctx.moveTo(200, 200);
+ctx.lineTo(200, 200);
+ctx.stroke();
 // write a draw function
 
 // write a handler for the keys
