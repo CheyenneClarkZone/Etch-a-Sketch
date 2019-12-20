@@ -4,6 +4,8 @@ const ctx = canvas.getContext('2d');
 const shakebutton = document.querySelector('.shake');
 
 // Setup our canvas for drawing
+ctx.linejoin = 'round';
+ctx.lineCap - 'round';
 
 // write a draw function
 
