@@ -21,11 +21,16 @@ ctx.lineTo(x, y);
 ctx.moveTo(x, y);
 ctx.stroke();
 // write a draw function
+function draw(options) {
+    console.log(options);
+
+}
 
 // write a handler for the keys
 function handleKey(e) {
-    e.preventDefault();
     if (e.key.includes('Arrow')) {
+        e.preventDefault();
+        draw({key: e.key});
         console.log(e.key);
         console.log('HANDLING KEY'); 
     }
