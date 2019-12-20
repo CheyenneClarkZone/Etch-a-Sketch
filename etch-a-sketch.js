@@ -25,7 +25,10 @@ ctx.stroke();
 // write a handler for the keys
 function handleKey(e) {
     e.preventDefault();
-    console.log('HANDLING KEY');
+    if (e.key.includes('Arrow')) {
+        console.log(e.key);
+        console.log('HANDLING KEY'); 
+    }
 } 
 
 // clear / shake function 
