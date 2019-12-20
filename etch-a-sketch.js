@@ -23,7 +23,6 @@ ctx.stroke();
 // write a draw function
 function draw({key}) { //object destructuring - taken properties and renamed them into proper variables. Gives us shorter variable names.
     console.log(key);
-
 }
 
 // write a handler for the keys
@@ -31,8 +30,6 @@ function handleKey(e) {
     if (e.key.includes('Arrow')) {
         e.preventDefault();
         draw({key: e.key});
-        console.log(e.key);
-        console.log('HANDLING KEY'); 
     }
 } 
 
