@@ -23,9 +23,10 @@ ctx.stroke();
 // write a draw function
 
 // write a handler for the keys
-function handleKey() {
+function handleKey(e) {
+    e.preventDefault();
     console.log('HANDLING KEY');
-}
+} 
 
 // clear / shake function 
 
