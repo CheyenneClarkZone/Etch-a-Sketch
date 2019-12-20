@@ -9,15 +9,16 @@ const { width, height} = canvas; // Destructuring. Take width property and put i
 
 
 // create random x and y starting points on the canvas
-let x = Math.floor(Math.random() * width);
+const x = Math.floor(Math.random() * width);
+const y = Math.floor(Math.random() * height);
 
 ctx.linejoin = 'round';
 ctx.lineCap = 'round';
 ctx.lineWidth = 10;
 
 ctx.beginPath(); //start the drawing
-ctx.moveTo(200, 200);
-ctx.lineTo(200, 200);
+ctx.lineTo(x, y);
+ctx.moveTo(x, y);
 ctx.stroke();
 // write a draw function
 
