@@ -21,8 +21,8 @@ ctx.lineTo(x, y);
 ctx.moveTo(x, y);
 ctx.stroke();
 // write a draw function
-function draw(options) {
-    console.log(options);
+function draw({key}) { //object destructuring - taken properties and renamed them into proper variables. Gives us shorter variable names.
+    console.log(key);
 
 }
 
