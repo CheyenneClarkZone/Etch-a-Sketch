@@ -23,7 +23,18 @@ ctx.stroke();
 // write a draw function
 function draw({key}) { //object destructuring - taken properties and renamed them into proper variables. Gives us shorter variable names.
     console.log(key);
+
+    //Start the path
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+
+    //move our x and y values depending on what the user did
+    x = x - 10;
+    y = y - 10;
+    ctx.lineTo(x,y);
+    ctx.stroke();
 }
+
 
 // write a handler for the keys
 function handleKey(e) {
