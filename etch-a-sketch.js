@@ -66,7 +66,7 @@ function handleKey(e) {
 // clear / shake function 
 function clearCanvas() {
     canvas.classList.add('shake');
-    ctx.clearRect (0, 0, 500, 500); //clearRect clears part or all of it
+    ctx.clearRect (0, 0, width, height); //clearRect clears part or all of it
     canvas.addEventListener('animationend', function() {
         console.log('Done the shake!');
         canvas.classList.remove('shake');
