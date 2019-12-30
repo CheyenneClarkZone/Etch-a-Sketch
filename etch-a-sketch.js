@@ -25,7 +25,7 @@ ctx.stroke();
 // write a draw function
 function draw({key}) { //object destructuring - taken properties and renamed them into proper variables. Gives us shorter variable names.
     // increment the hue
-    hue -= 1;
+    hue += 1;
     ctx.strokeStyle = `hsl(${hue}, 100%, 50%)`;
     console.log(key);
 
@@ -64,6 +64,9 @@ function handleKey(e) {
 } 
 
 // clear / shake function 
+function clearCanvas() {
+    canvas.classList.add('shake');
+}
 
 // listen for arrow keys
 window.addEventListener('keydown', handleKey);
