@@ -69,7 +69,9 @@ function clearCanvas() {
     canvas.addEventListener('animationend', function() {
         console.log('Done the shake!');
         canvas.classList.remove('shake');
-    })
+    }, 
+    { once: true } //If you set once to be true, that addEventListener will unbind itself
+  );
 }
 
 
