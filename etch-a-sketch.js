@@ -9,8 +9,8 @@ const { width, height} = canvas; // Destructuring. Take width property and put i
 
 
 // create random x and y starting points on the canvas
-const x = Math.floor(Math.random() * width);
-const y = Math.floor(Math.random() * height);
+let x = Math.floor(Math.random() * width);
+let y = Math.floor(Math.random() * height);
 
 ctx.linejoin = 'round';
 ctx.lineCap = 'round';
@@ -31,7 +31,19 @@ function draw({key}) { //object destructuring - taken properties and renamed the
     //move our x and y values depending on what the user did
     switch (key) {
         case 'ArrowUp'
-        y = y - MOVE_AMOUNT;
+        y -= MOVE_AMOUNT;
+            break;
+        case 'ArrowRight'
+        x += MOVE_AMOUNT;
+            break;
+        case 'ArrowDown'
+        y += MOVE_AMOUNT;
+            break;
+        case 'ArrowLeft'
+        x -= MOVE_AMOUNT;
+            break;
+        default:
+            break;
     }
     ctx.lineTo(x, y);
     ctx.stroke();
