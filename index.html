@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en"> <!--identifies language of text content on web. 'En' is for english. Can also have 'en-gb- for British English' -->
+<html lang="en">
+<!--identifies language of text content on web. 'En' is for english. Can also have 'en-gb- for British English' -->
 
 <head>
-  <meta charset="UTF-8"> <!--meta charset is used to specify the character encoding for the HTML document.-->
+  <meta charset="UTF-8">
+  <!--meta charset is used to specify the character encoding for the HTML document.-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Etch A Sketch</title>
-  <link rel="stylesheet" href="../../base.css">
 </head>
 
 <body>
@@ -43,30 +44,25 @@
       animation: shake 0.5s linear 1;
     }
 
-    @keyframes shake {  <!-- keyframes specifies the animation code.-->
+    @keyframes shake {
 
-      10%,
-      90% {
-        transform: translate3d(-1px, 0, 0);
+      0% {
+        background-color: red;
       }
 
-      20%,
-      80% {
-        transform: translate3d(2px, 0, 0);
+      25% {
+        background-color: orange;
       }
 
-      30%,
-      50%,
-      70% {
-        transform: translate3d(-4px, 0, 0);
+      50% {
+        background-color: yellow;
       }
 
-      40%,
-      60% {
-        transform: translate3d(4px, 0, 0);
+      100% {
+        background-color: green;
       }
     }
-  </style> 
+  </style>
 </body>
 
 </html>
